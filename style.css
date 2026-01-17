@@ -1,0 +1,70 @@
+body {
+    background-color: #222;
+    color: blue;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+/* body: seleziona il corpo della pagina */
+/* { .... } regole da applicare */
+/* color: colore del testo */
+/* text-align: alliniamento testo */
+
+h1 {
+    font-size: 50px;
+    margin-top: 40px;
+}
+
+/* font-size: dimensione testo */
+/* margin-top: spazio sopra */
+
+#game {
+  width: 500px;
+  height: 500px;
+  background-color: black;
+  margin: 40px auto;
+  border: 3px solid blueviolet;
+  position: relative; /* diciamo al game: "Tu sei il riferimento */
+}
+
+/* game: selettore per id */
+/* un id è unico */
+
+#player {
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
+#coin {
+  width: 20px;
+  height: 20px;
+  background-color: gold;
+  border-radius: 50%; /* lo rende tondo */
+  position: absolute;
+  left: 200px;
+  top: 200px;
+}
+
+#message {
+    margin-top: 10px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#enemy {
+  width: 30px;
+  height: 30px;
+  background: dodgerblue;
+  position: absolute;
+  left: 300px;
+  top: 100px;
+  z-index: 9;
+}
+
+#lives {
+    font-weight: bold;
+}

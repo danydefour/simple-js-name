@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My First Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <h1>My First Game</h1>
+
+    <!-- HUD: informazioni a schermo -->
+    <div id="hud">
+      Score: <span id="score">0</span> —
+      Time: <span id="time">30</span> —
+      Lives: <span id="lives">3</span> —
+      Last key: <span id="lastKey">none</span> —
+      Status: <span id="status">...</span>
+    </div>
+
+    <!-- Messaggi (Game Over, ecc.) -->
+    <div id="message"></div>
+
+    <!-- Campo di gioco -->
+    <div id="game">
+      <div id="player"></div>
+      <div id="coin"></div>
+      <div id="enemy"></div>
+    </div>
+
+    <!-- JS alla fine: così gli elementi HTML esistono già -->
+    <script src="script.js"></script>
+  </body>
+</html>
